@@ -1,16 +1,42 @@
-# React + Vite
+🚗 ParkingGo — Front-end Oficial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é a interface web do ParkingGo, um sistema moderno para busca, reserva e gestão de vagas de estacionamento.
+Desenvolvido com React + Vite, o objetivo é oferecer uma experiência rápida, intuitiva e fluida, com integração ao backend da plataforma e recursos como:
 
-Currently, two official plugins are available:
+Visualização de vagas em mapa interativo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sistema de login e cadastro
 
-## React Compiler
+Planos de assinatura e pagamentos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Reservas de vagas com seleção de horários
 
-## Expanding the ESLint configuration
+Configurações da conta, favoritos e logout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Interface responsiva e otimizada
+
+Animações suaves com framer-motion
+
+O Vite é utilizado para garantir performance, hot reload instantâneo e um ambiente de desenvolvimento leve e eficiente.
+
+🛠️ Tecnologias principais
+
+React — construção de componentes e lógica de interface
+
+Vite — bundler extremamente rápido
+
+React Router — navegação entre páginas
+
+Leaflet — mapa interativo para exibir vagas
+
+Framer Motion — animações fluidas
+
+Axios — comunicação com o backend
+
+📁 Estrutura do projeto
+
+O código segue uma organização modular, separando páginas, componentes, hooks, contextos e serviços, garantindo escalabilidade e facilidade de manutenção.
+
+🚀 Objetivo
+
+Criar a melhor experiência possível para o usuário ao buscar, reservar e gerenciar vagas, unindo simplicidade, velocidade e design moderno.
