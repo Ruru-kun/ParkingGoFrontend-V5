@@ -1,42 +1,96 @@
-🚗 ParkingGo — Front-end Oficial
+# 🚗 ParkingGo — Front-end Oficial
 
-Este projeto é a interface web do ParkingGo, um sistema moderno para busca, reserva e gestão de vagas de estacionamento.
-Desenvolvido com React + Vite, o objetivo é oferecer uma experiência rápida, intuitiva e fluida, com integração ao backend da plataforma e recursos como:
+![ParkingGo Banner](./public/parking.png)
 
-Visualização de vagas em mapa interativo
+O **ParkingGo** é uma aplicação web moderna para busca, reserva e gerenciamento de vagas de estacionamento.  
+Este repositório contém todo o front-end do projeto, desenvolvido com **React + Vite**, com foco em velocidade, organização e experiência do usuário.
 
-Sistema de login e cadastro
+---
 
-Planos de assinatura e pagamentos
+## ✨ Funcionalidades Principais
 
-Reservas de vagas com seleção de horários
+- 🔐 **Login e Cadastro de Usuários**
+- 🗺️ **Mapa interativo** com visualização de vagas
+- 🅿️ **Reserva de vagas** com escolha de horário
+- 💳 **Sistema de planos e pagamentos**
+- ⭐ **Favoritos** (usuários logados)
+- ⚙️ **Configurações da conta** + logout
+- 📱 **Layout responsivo**
+- 🎞️ **Animações suaves** com *Framer Motion*
+- 🔌 **Integração com o backend próprio**
 
-Configurações da conta, favoritos e logout
+---
 
-Interface responsiva e otimizada
+## 🛠️ Tecnologias Utilizadas
 
-Animações suaves com framer-motion
+### Frontend
+- **React**
+- **Vite**
+- **React Router DOM**
+- **Axios**
+- **Framer Motion**
+- **Leaflet**
+- **CSS Modules / Global CSS**
 
-O Vite é utilizado para garantir performance, hot reload instantâneo e um ambiente de desenvolvimento leve e eficiente.
+---
 
-🛠️ Tecnologias principais
+## 📁 Estrutura do Projeto
 
-React — construção de componentes e lógica de interface
+```
+src/
+ ├─ components/       # Componentes reutilizáveis
+ ├─ pages/            # Páginas completas do app
+ ├─ services/         # Conexão com API
+ ├─ context/          # Autenticação e estados globais
+ ├─ hooks/            # Hooks personalizados
+ ├─ assets/           # Ícones e imagens
+ ├─ App.jsx           # Roteamento principal
+ └─ main.jsx          # Ponto de entrada
+```
 
-Vite — bundler extremamente rápido
+---
 
-React Router — navegação entre páginas
+## 🚀 Objetivo do Projeto
 
-Leaflet — mapa interativo para exibir vagas
+Criar uma plataforma simples e eficiente para usuários encontrarem e reservarem vagas de estacionamento com rapidez e segurança, trazendo:
 
-Framer Motion — animações fluidas
+- Interface intuitiva  
+- Navegação fluida  
+- Velocidade  
+- Código limpo e organizado  
 
-Axios — comunicação com o backend
+---
 
-📁 Estrutura do projeto
+## 🧪 Como rodar o projeto
 
-O código segue uma organização modular, separando páginas, componentes, hooks, contextos e serviços, garantindo escalabilidade e facilidade de manutenção.
+```bash
+npm install
+npm run dev
+```
 
-🚀 Objetivo
+Acesse em:
 
-Criar a melhor experiência possível para o usuário ao buscar, reservar e gerenciar vagas, unindo simplicidade, velocidade e design moderno.
+```
+http://localhost:5173
+```
+
+---
+
+## 🤝 Contribuição
+
+Pull Requests são bem-vindos!  
+Sinta-se livre para abrir issues, reportar bugs ou sugerir melhorias.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+## 🧭 Status do Projeto
+
+🚧 **Em desenvolvimento** – novas funcionalidades e melhorias visuais estão sendo adicionadas constantemente.
+
+---
