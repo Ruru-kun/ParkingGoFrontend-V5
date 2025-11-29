@@ -14,19 +14,18 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!email || !password) {
-      alert("Preencha email e senha");
+    const resp = auth.login({ email, password });
+    if (!resp.ok) {
+      alert(resp.message || "Falha no login");
       return;
     }
-
-    auth.login({ email });
     navigate(redirectTo, { replace: true });
   }
 
   return (
-    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -6 }} transition={{ duration: 0.45 }}>
+    <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
       <div className="login-wrap">
-        <motion.div initial={{ scale: 0.995, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.35 }} className="login-card">
+        <motion.div className="login-card" initial={{ scale: 0.995, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.3 }}>
           <h2 style={{ marginTop: 0 }}>Entrar no ParkingGo</h2>
 
           <form onSubmit={handleSubmit}>
@@ -34,7 +33,7 @@ export default function Login() {
             <input className="input" placeholder="Senha" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
             <div style={{ marginTop: 12 }}>
-              <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="btn" type="submit">Entrar</motion.button>
+              <button className="btn" type="submit">Entrar</button>
             </div>
 
             <div style={{ marginTop: 12 }}>
