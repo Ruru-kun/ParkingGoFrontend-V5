@@ -1,0 +1,148 @@
+:root{
+  --primary: #7BD3EA;
+  --accent: #4da6ff;
+  --secondary: #FFF6E6;
+  --card: #FFF8E6;
+  --text: #0A2333;
+  --muted: #6b6b6b;
+  --white: #ffffff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: var(--secondary);
+  color: var(--text);
+}
+
+/* Header (global) */
+.app-header {
+  width:100%;
+  padding:16px 22px;
+  background: linear-gradient(90deg, #bfeefc 0%, #9fe0f6 100%);
+  color: #083646;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* layout wrapper */
+.page-wrap {
+  max-width:1100px;
+  margin: 10px auto;
+  padding: 0 18px;
+}
+
+/* Hero styles — maior conforme pedido */
+.hero {
+  display:flex;
+  gap:28px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-top: 18px;
+}
+
+.hero-left {
+  flex:1;
+  min-width: 300px;
+}
+
+.hero-title {
+  font-size:38px; /* aumentado */
+  font-weight:900;
+  line-height:1.02;
+  color: var(--text);
+  margin:0;
+}
+
+.hero-sub {
+  margin-top:12px;
+  color:var(--muted);
+  font-size:18px;
+  max-width: 640px;
+}
+
+/* hero image */
+.hero-right img { max-width: 320px; border-radius: 12px; }
+
+/* map card */
+.map-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.04);
+  margin-top: 18px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-wrapper {
+  height: 420px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* buttons */
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 16px;
+  border-radius:10px;
+  background:var(--accent);
+  color:var(--white);
+  font-weight:700;
+  border:none;
+  cursor:pointer;
+}
+
+/* plan list and card */
+.plan-list { margin-top:18px; display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.plan-card { background: var(--card); padding: 14px; border-radius: 12px; box-shadow:0 6px 14px rgba(0,0,0,0.04); }
+
+/* reservas */
+.reservas-list { margin-top:18px; display:flex; flex-direction:column; gap:12px; max-width:900px; margin-left:auto; margin-right:auto; }
+
+/* login / cadastro centralizados */
+.login-wrap {
+  min-height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 18px;
+}
+
+.login-card {
+  width: 360px;
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(10,20,30,0.06);
+  text-align:center;
+}
+
+.input {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  margin-top:10px;
+}
+
+/* small helper */
+.text-muted { color: var(--muted); font-size:14px; }
+
+@media (max-width:900px){
+  .hero { flex-direction:column; align-items:flex-start; }
+  .map-wrapper { height: 320px; }
+  .hero-title { font-size: 30px; }
+}
