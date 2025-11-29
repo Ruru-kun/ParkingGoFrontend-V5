@@ -1,7 +1,5 @@
 # 🚗 ParkingGo — Front-end Oficial
 
-![ParkingGo Banner](./public/parking.png)
-
 O **ParkingGo** é uma aplicação web moderna para busca, reserva e gerenciamento de vagas de estacionamento.  
 Este repositório contém todo o front-end do projeto, desenvolvido com **React + Vite**, com foco em velocidade, organização e experiência do usuário.
 
